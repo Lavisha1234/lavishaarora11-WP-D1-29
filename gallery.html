@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Photo Gallery</title>
+    <style>
+        /* General styles for the page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        /* Container to hold the gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+
+        /* Style for each image */
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        /* Zoom effect on hover */
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Container for each image */
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Photo Gallery</h1>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src=https://static.vecteezy.com/system/resources/previews/013/951/373/large_2x/awesome-nature-landscape-beautiful-scene-with-high-tatra-mountain-peaks-stones-in-mountain-lake-calm-lake-water-reflection-colorful-sunset-sky-amazing-nature-background-autumn-adventure-hiking-photo.jpg alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src=https://th.bing.com/th/id/R.e9dcea64526601c69755e66b24aee605?rik=XVZ14UBOjY2uTA&riu=http%3a%2f%2fwallpapercave.com%2fwp%2frEZ5ohG.jpg&ehk=5gF1yEZ2S%2b3eEi3JxsfH0nGWs%2fhuj4g0A0F3OH06ND8%3d&risl=&pid=ImgRaw&r=0 alt="Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src=https://th.bing.com/th/id/R.3a9f0210ff7d1e83039ff237c81bacae?rik=asArcL6qvWfZfA&riu=http%3a%2f%2fs1.picswalls.com%2fwallpapers%2f2016%2f03%2f29%2fbeautiful-nature-high-definition_042323787_304.jpg&ehk=8tO7UxFL%2bC03x6vfc2O9EhdUCe4fl6tC7UGUdlnpdX4%3d&risl=&pid=ImgRaw&r=0 alt="Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src=https://www.pixelstalk.net/wp-content/uploads/2016/09/Best-Beautiful-Images-For-Desktop-Nature.png alt="Image 4">
+        </div>
+        <div class="gallery-item">
+            <img src=https://www.wallpics.net/wp-content/uploads/2017/07/amazing-nature-wallpaper-10047797.jpg alt="Image 5">
+        </div>
+        <div class="gallery-item">
+            <img src=https://www.pixelstalk.net/wp-content/uploads/2016/07/Background-Beautiful-Nature-Images-HD.jpg alt="Image 6">
+        </div>
+    </div>
+
+</body>
+</html>
